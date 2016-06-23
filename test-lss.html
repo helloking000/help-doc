@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Less extends CSS with dynamic behavior such as variables, mixins, operations and functions. Less runs on both the server-side (with Node.js and Rhino) or client-side (modern browsers only).
+    ">
+    <meta name="author" content="The Core Less Team">
+
+    <title>
+      help-doc
+    </title>
+
+    <!-- Main styles -->
+    <link href="http://lesscss.org/public/css/index.css" rel="stylesheet">
+
+    <!-- Webfonts -->
+    <script type="text/javascript">
+      WebFontConfig = {google: {families: ['PT+Sans:400,700,400italic,700italic', 'PT+Mono&subset=latin,cyrillic'] }};
+      (function() {
+        var wf = document.createElement('script');
+        wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+        wf.type = 'text/javascript';
+        wf.async = 'true';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(wf, s);
+      })();
+    </script>
+
+
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="//oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="//oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="shortcut icon" href="public/ico/favicon.ico">
+  </head>
+
+   
+    <div class="container docs-container">
+      <div class="row">
+
+        <div class="col-md-3">
+          <div class="sidebar hidden-print" role="complementary">
+            <div id="navigation">
+  
+                <ul class="nav sidenav">
+                    <li><a href="#features-overview">在身边DSP平台ZDSP 简介</a></li>
+                    <li><a href="#definition">名词解释</a></li>
+                    
+
+                     <li><a href="#toufang-process-overview">投放步骤概要</a>
+                      <ul class="nav">
+                        <li><a href="#toufang-process-prepare">上线前准备</a></li>
+                        <li><a href="#toufang-process-create">项目创建</a></li>
+                        <li><a href="#toufang-process-upline">项目上线</a></li>   
+
+                       
+                      </ul>
+                    </li>
+
+                    <li><a href="#operation-details">系统详细操作</a>
+
+                        <ul class="nav">
+                          <li><a href="#system-management">系统管理</a>
+                            <ul class="nav">
+                                <li><a href="#advertiser-management">广告主管理</a></li>                
+                                <li><a href="#user-management">用户管理</a></li>
+                                <li><a href="#media-management">媒体管理</a></li>
+                                <li><a href="#innov-check">创意初审</a></li>             
+                            </ul>
+                          </li>
+
+                          <li><a href="#toufang-management">投放管理</a>
+                             <ul class="nav">
+                                <a href="#toufang-management">投放管理</a>
+                                  <li><a href="#campaign-plan">推广计划</a></li>               
+                                  <li><a href="#campaign-strategy">推广策略</a></li>
+                                  <li><a href="#innov">创意</a></li>                           
+                             </ul>
+                          </li>
+
+                          <li><a href="#statistical-report">统计报表</a>
+                              <ul class="nav">
+                                <li><a href="#">日报</a></li>               
+                                <li><a href="#">十分钟报</a></li>
+                                <li><a href="#">时报</a></li>           
+                              </ul>
+                          </li>
+                        </ul>
+
+
+
+
+
+                     
+
+                    <li><a href="#optimization">优化宝典</a>
+                      <ul class="nav">              
+                        <li><a href="#upline-prepare">上线准备</a></li>
+                        <li><a href="#optimization-operate">优化运作</a>
+                          <ul class="nav">              
+                            <li><a href="#">KPI的确立及影响因素</a></li>
+                            <li><a href="#">影响各KPI的维度因素</a></li>                            
+                            <li><a href="#">常见问题解答</a></li>
+                          </ul>
+                        </li>
+
+                        <li><a href="#data-analyse">数据分析</a></li>
+                      </ul> 
+                    </li>
+                </ul>
+
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-9" role="main">         
+          <div class="panel docs-content">
+
+            <!-- over-view -->
+            <div class="docs-section">
+              <div class="page-header">
+                <h1 class="docs-heading">在身边DSP平台ZDSP 简介<span class="anchor-target" id="features-overview"></span>
+                <a href="#features-overview" name="features-overview" class="anchor glyphicon glyphicon-link"></a></h1>
+              </div>
+                  <p>
+                    ZDSP对接各交易市场及媒体资源的平台。以透明、公开、公平的方式进行广告竞价，ZDSP平台可以查看网站、广告位的投放报告; 实现广告主的广告投放及投放效果的查看。同时, ZDSP可以通过设置流量过滤,实现流量的定向购买。 
+                  </p>             
+            </div>
+
+            <!-- dinfinition --> 
+            <div class="docs-section">
+              <div class="page-header">
+                <h1 class="docs-heading">名词解释<span class="anchor-target" id="definition"></span>
+                <a href="#definition" name="definition" class="anchor glyphicon glyphicon-link"></a></h1>
+                  </div>
+                  <p>程序化购买：通过数字平台，代表广告主，自动地执行广告媒体购买的流程。相对于传统的人力购买的方式，程序化购买的实现通常依赖于DSP(需求方平台)和Ad Exchange(广告交易平台)，它包括RTB实时竞价模式和non-RTB非实时竞价模式。
+DSP：Demand-Side Platform，是一个系统，也是一种在线广告平台，服务于广告主，帮助广告主在互联网或者移动互联网上进行广告投放。
+ADX：AD Exchange（广告交易平台），是一种类似于使用美国股票交易平台模式来进行购买广告的形式，此平台下，广告资源根据媒体放出的剩余资源变化而变化，广告主也可以根据自己的需求，来购买广告位。</p>                
+            </div>
+
+
+            <!-- toufang-procss -->
+            <div class="docs-section">
+                  <div class="page-header">
+                    <h1 class="docs-heading">投放步骤概要 <span class="anchor-target" id="toufang-process-overview"></span>
+                      <a href="#toufang-process-overview" name="toufang-process-overview" class="anchor glyphicon glyphicon-link"></a></h1>
+                  </div>
+                    
+                      
+                  
+                <h2 class="docs-heading">1.上线前准备 <span class="anchor-target" id="toufang-process-prepare"></span>
+                  <a href="#toufang-process-prepare" name="toufang-process-prepare" class="anchor glyphicon glyphicon-link"></a></h2>
+
+                        <pre>
+1.1 需要客户提供资质文件,一般包括:组织机构代码证、企业营业执照、ICP证、法人身份证，以供广告交易平台(ADX)审核；
+1.2 需要客户提供创意素材,包括多种尺寸如： 300*250、250*250、728*90、960*90 等；
+1.3 创建广告主提交给各家广告交易平台审核，通过的交易平台才可进行广告投放; 
+                        </pre>
+
+
+                <h2 class="docs-heading">2.项目创建<span class="anchor-target" id="toufang-process-create"></span>
+                  <a href="#toufang-process-create" name="toufang-process-create" class="anchor glyphicon glyphicon-link"></a></h2>
+                  <pre>
+  2.1 创建推广计划设置推广计划信息：总预算、曝光、点击上限、频控等；
+2.2 创建推广策略，推广策略包含在推广计划内，设置具体投放的预算、时间、地域、人群等内容；
+2.3 上传创意,创意包含在推广策略内，通过审核的广告主，可上传创意，上传的创意先在DSP系统内进行审核，审核通过提交ADX审核，再次审核通过的才可进行投放；
+                  </pre>
+                        
+
+
+                <h2 class="docs-heading">3.项目上线 <span class="anchor-target" id="toufang-process-upline"></span>
+                  <a href="#toufang-process-upline" name="toufang-process-upline" class="anchor glyphicon glyphicon-link"></a></h2>
+
+                        <pre>
+3.1 开启推广计划、推广策略、创意；
+3.2 观察十分钟报是否有数据,确定上线成功；
+3.3 根据统计报表数据,调整推广策略的设置,优化执行效果；
+                        </pre>
+
+                 <h2 class="docs-heading">系统详细操作<span class="anchor-target" id="operation-details"></span>
+                  <a href="#operation-details" name="operation-details" class="anchor glyphicon glyphicon-link"></a></h2>
+
+                        <pre>
+ZDSP系统分为三大块：系统管理、投放管理、统计报表；
+系统管理包含：广告主管理、用户管理、媒体管理，创意初审；
+投放管理：推广计划、推广策略、创意；
+统计报表：十分钟报、时报、日报；
+                        </pre>
+
+                <h2 class="docs-heading">系统管理<span class="anchor-target" id="system-management"></span>
+                  <a href="#system-management" name="system-management" class="anchor glyphicon glyphicon-link"></a></h2>
+
+                        
+
+                <h3 class="docs-heading">1.1广告主管理<span class="anchor-target" id="advertiser-management"></span>
+                  <a href="#advertiser-management" name="advertiser-management" class="anchor glyphicon glyphicon-link"></a></h3>
+                <pre>
+对系统中的广告主进行管理，完成查看、创建、编辑等操作；
+<h4>1.1.1广告主列表页</h4>
+  进入方式：
+  ①　登录系统默认页面为广告主列表页；
+  ②　其他页面时，点击导航菜单【系统管理】-【广告主管理】，进入广告主列表页面；
+<img src="./img/1.png">
+A.【创建广告主】：点击创建新的广告主，跳转到创建页面；
+B.【设置广告主】：编辑已创建的广告主，修改了必填项和上传的图片，广告主需要重新提交审核；
+B.【删除】：选择某一广告主，点击删除，删除内容包含了此广告主下的所有投放内容；提示：删除广告主需谨慎！！
+C.【翻页功能】：设置每页显示广告主的条数10、20、50条，可选择某一页进行跳转，上下页翻页等功能；<small style='color:red'>提示：下边页面中有翻页功能的请参照此条进行理解</small>
+D.【退出】：每个页面都有此功能，点击“退出”页面跳转回登录页面；
+<h4>1.1.2创建广告主</h4>
+<small style='color:red'> 提示：页面中带“*”号的为必填项</small>
+<img src="./img/2.png">
+以上图所标字母A为开头从上到下进行讲解：
+A.【广告主名称】：填写广告主名称，最好为广告主常用公司名如：光明乳业；
+B.【广告主主体资质名称】：广告主营业执照上的名称；
+C.【组织机构代码证编号】：组织机构证上的编号；
+D.【广告主官网】：广告主的官网，通常设置为投放创意的落地页； 
+E.【行业】：广告主属于的行业，若公司旗下的产品太多，请选择此次投放的品牌的行业，选择到最小行业分类； 
+F.【联系人电子邮箱】：建议填写广告主广告投放对接人工作邮箱；
+G.【联系人姓名】：建议填写广告主广告投放对接人姓名；
+H.【联系人电话】：建议填写广告主广告投放对接人电话；
+I.【企业营业执照】：上传扫描件或图片，小于50KB；
+J.【ICP备案截图】：上传扫描件或图片，小于50KB；
+K.【组织机构代码证】：上传扫描件或图片，小于50KB；
+点击【保存并提交】，此广告主保存成功且提交系统中所有对接的ADX进行审核，    跳回广告主列表页；
+取消即操作取消，跳回广告主列表页；
+UC
+  T  
+    创建一个新的广告主
+  O 
+    广告主名称: A
+    广告主主体资质名称：营业执照上名字；
+    组织机构代码证编号：组织代码证上的编号；
+    广告主官网：http://www.xxxxxxxxx.com/；
+    行业：XX；
+    联系人电子邮箱：XXX@XX.com；
+    联系人姓名：XXX；
+    联系人电话：1XXXXX；
+    企业营业执照：上传图片；
+    ICP备案截图：上传图片；
+    组织机构代码证：上传图片；
+    点击保存并提交；
+
+
+                </pre>
+
+<h3 class="docs-heading">1.2用户管理<span class="anchor-target" id="user-management"></span>
+                  <a href="#user-management" name="user-management" class="anchor glyphicon glyphicon-link"></a></h3>
+<p>
+用户管理是对登录ZDSP系统账户的管理，账户分为：管理员账户、优化师账号、广告主账号； 
+</p>
+
+
+<h3 class="docs-heading">1.3媒体管理<span class="anchor-target" id="media-management"></span>
+                  <a href="#media-management" name="media-management" class="anchor glyphicon glyphicon-link"></a></h3>
+<p>
+  创建具体投放的广告位，广告位隶属于网站，创建的广告位可在推广策略PDB中调用；
+</p>
+
+<h3 class="docs-heading">1.4创意初审<span class="anchor-target" id="innov-check"></span>
+                  <a href="#innov-check" name="innov-check" class="anchor glyphicon glyphicon-link"></a></h3>
+
+<pre>
+ 创意上传系统后，初审由管理员进行审核，初审通过后，创意会提交到交易平台审核，审核状态即交易平台给到的反馈；
+进入方式：
+点击导航菜单【系统管理】-【创意初审】，进入创意初审页面； 
+</pre>
+
+
+
+
+
+
+
+
+
+
+                <h2 class="docs-heading">2.投放管理<span class="anchor-target" id="toufang-management"></span>
+                  <a href="#toufang-management" name="toufang-management" class="anchor glyphicon glyphicon-link"></a></h2>
+                      <p>广告项目的投放流程，具体为推广计划、推广策略、创意的创建和执行。推广计划下包含推广策略，推广策略下包含创意；</p>
+
+
+                      <h3 class="docs-heading">2.1推广计划<span class="anchor-target" id="campaign-plan"></span>
+                  <a href="#campaign-plan" name="campaign-plan" class="anchor glyphicon glyphicon-link"></a></h2>
+                      <pre>
+推广计划列表页是投放管理的首页；
+2.1.1推广计划列表页
+进入方式：
+①　登录系统，点击广告主名称，进入推广计划列表页；
+②　在广告主内的其他页面，点击导航【投放管理】，进入推广计划列表页；                      
+                      </pre>
+
+                      <h3 class="docs-heading">2.2推广策略<span class="anchor-target" id="campaign-strategy"></span>
+                  <a href="#campaign-strategy" name="campaign-strategy" class="anchor glyphicon glyphicon-link"></a></h2>
+                      <pre>
+推广策略为投放的具体方案；
+2.2.1推广策略列表
+进入方式：
+在推广计划列表页，点击推广计划名称进入该推广计划下的推广策略列表页；
+                      </pre>
+                      <h3 class="docs-heading">2.3创意<span class="anchor-target" id="innov"></span>
+                  <a href="#innov" name="" class="anchor glyphicon glyphicon-link"></a></h2>
+
+                      <h3>2.1推广计划</h3>
+                      <pre>
+推广计划列表页是投放管理的首页；
+2.1.1推广计划列表页
+进入方式：
+①　登录系统，点击广告主名称，进入推广计划列表页；
+②　在广告主内的其他页面，点击导航【投放管理】，进入推广计划列表页；                      
+                      </pre>
+                      <h3>2.2推广策略</h3>
+                      <pre>
+推广策略为投放的具体方案；
+2.2.1推广策略列表
+进入方式：
+在推广计划列表页，点击推广计划名称进入该推广计划下的推广策略列表页；
+                      </pre>
+
+                      <h3>2.3创意</h3>
+                      <pre>
+创意为投放管理的最后一个环节，上传创意ZDSP系统初审，通过提交ADX审核，ADX审核通过的才可进行投放；
+  2.3.1创意列表
+  进入方式：
+  点击推广策略名称进入该推广策略的创意列表页；                      
+                      </pre>
+
+
+                                    <a href="#toufang-management">投放管理</a>
+                                  <li><a href="#campaign-plan">推广计划</a></li>               
+                                  <li><a href="#campaign-strategy">推广策略</a></li>
+                                  <li><a href="#innov">创意</a></li>   
+
+
+
+                <h2 class="docs-heading">3.统计报表<span class="anchor-target" id="statistical-report"></span>
+                  <a href="#statistical-report" name="statistical-report" class="anchor glyphicon glyphicon-link"></a></h2>
+
+                        <p>
+                          统计报表是查看广告投放数据的地方，优化师根据得到的数据，对投放的广告进行实时优化，统计报表分为：十分钟报、时报、日报；
+                        </p>
+                        <h3>3.1日报</h3>
+                        <pre>
+日报以天为数据单元，不能看当天的数据，只能看昨天及以前的数据，进入日报默认时间为昨天；
+进入方式：
+广告主列表页，点击进入某一广告主内，点击导航“统计报表”，进入页面默认为日报；
+                        </pre>
+
+                        <h3>3.2十分钟报</h3>
+                        <pre>
+十分钟报以十分钟为数据单元，每十分钟更新一次数据，只能看当天的数据；
+进入方式：
+在广告主列表页，点击广告主名称进入某一广告主内，点击导航“统计报表”，页面默认为日报，点击十分钟报，进入十分钟报界面；
+                        </pre>
+
+                        <h3>3.3时报</h3>
+                        <pre>
+时报以每小时为数据单元，每小时更新一次数据，只能看当天的数据；
+进入方式：
+在广告主列表页，点击进入某一个广告主内，点击导航“统计报表”，进入统计报表首页点击时报则进入时报页面；
+时报的操作和十分钟报唯一去区别是十分钟数据单元变为小时数据单元，操作请参考日报，数据只有一天； 
+                        </pre>
+
+
+
+
+
+
+
+                <h2 class="docs-heading">优化宝典<span class="anchor-target" id="optimization"></span>
+                  <a href="#optimization" name="optimization" class="anchor glyphicon glyphicon-link"></a></h2>
+
+                        
+                <h2 class="docs-heading">1.上线准备<span class="anchor-target" id="upline-prepare"></span>
+                  <a href="#upline-prepare" name="upline-prepare" class="anchor glyphicon glyphicon-link"></a></h2>
+                  <h3>1.1项目上线前</h3>
+                  <pre>
+          1、确认投放需求单所有要求；
+          2、核实执行日报中的日均量级；
+          3、确认上线后，手动开启各推广计划，推广策略，创意；
+                  </pre>
+                        
+
+
+                <h2 class="docs-heading">2.优化运作<span class="anchor-target" id="optimization-operate"></span>
+                  <a href="#optimization-operate" name="optimization-operate" class="anchor glyphicon glyphicon-link"></a></h2>
+
+                        <h3>2.1KPI的确立及影响因素</h3>
+                        <pre>
+                          KPI设定
+1、要在质量、成本、数量三者中权衡，由于DSP投放是市场经济的结果，所以广告主不要期待三者都能无限满足，往往优化的第一步就是对于这三方面的权衡。 
+2、设定原则：简单性、可实现性、可被跟踪性、相关性、衡量性
+•简单性（Simple）： 例如，点击成本XX元，避免多重KPI；
+•可衡量性(Measurable)： 例如，总曝光量5000万，避免模糊性词语；
+•可实现性(Attainable )： 例如，媒体定向前提下，量的实现可能成为挑战，要平衡两者；
+•相关性(Relevant)： 例如，展示广告是为了产品上线宣传，那kpi就不同于建立品牌美誉度的一个投放；
+•可被跟踪性(Trackable)： 例如，设定的KPI能够被代码跟踪，从而被优化
+常见KPI
+                        </pre>
+
+
+                <h2 class="docs-heading">3.数据分析<span class="anchor-target" id="data-analyse"></span>
+                  <a href="#data-analyse" name="data-analyse" class="anchor glyphicon glyphicon-link"></a></h2>
+
+                        <p>报表的数据维度，媒体数据、创意数据、竞价数据；</p>                      
+
+        </div>
+      </div>
+    </div>
+
+    
+        
+          <!-- Core JavaScript
+      ================================================== -->
+      <!-- Placed at the end of the document so the pages load faster -->
+      <script src="http://code.jquery.com/jquery-1.10.2.min.js"></script>
+      <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/holder/2.2.0/holder.min.js"></script>
+      <script src="http://lesscss.org/public/js/application.js"></script>
+  </body>
+</html>
